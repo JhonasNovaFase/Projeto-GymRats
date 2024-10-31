@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style/carrinho.css">
+</head>
+<body>
+    <header>
+        <h1>Seu Carrinho</h1>
+    </header>
+    <main>
+        <ul id="carrinho-lista"></ul>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </main>
+
+    
+    <script src="carrinho.js"></script>
+    <script>
+        function exibirCarrinho() {
+            const carrinhoLista = document.getElementById('carrinho-lista');
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.forEach(produtoId => {
+                const li = document.createElement('li');
+                li.textContent = `Produto: ${produtoId}`;
+                carrinhoLista.appendChild(li);
+            });
+        }
+        function finalizarCompra() {
+            alert('Compra finalizada!');
+            localStorage.removeItem('carrinho');
+            window.location.href = 'index.html';
+        }
+        
+        exibirCarrinho();
+    </script>
+</body>
+</html>

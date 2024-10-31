@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos</title>
+    <link rel="stylesheet" href="style/planos.css">
+</head>
+
+<body>
+    <header id="cabecalho" class="header-com-imagem">
+        <a href="index.html" class="logo">
+            <h1 id="logo">GymRats</h1>
+        </a>
+        <nav id="nav">
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main id="main-home">
+        
+        <section id="format">
+            <h1>Planos</h1>
+            <p>Na GYMRATS, temos planos flexíveis que se adaptam ao seu estilo de vida e objetivos. Confira nossas opções:</p>
+        </section>
+
+        
+        <section id="section-cards">
+            
+            <section class="cards">
+                <section class="txt-carda">
+                    <section class="tt">
+                        <h2 class="title-card">Plano básico</h2>
+                        <p>R$ 79,90</p>
+                    </section>
+                    <ul class="describe">
+                        <li>Acesso ilimitado às instalações da academia.</li>
+                        <li>Participação em aulas de grupo (até 2 por semana).</li>
+                        <li>Avaliação física inicial.</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Plano básico')">Adquirir</button>
+                </section>
+            </section>
+
+            
+            <section class="cards">
+                <section class="txt-carda">
+                    <section class="tt">
+                        <h2 class="title-card">Plano intermediário</h2>
+                        <p>R$ 119,90</p>
+                    </section>
+                    <ul class="describe">
+                        <li>Todos os benefícios do plano básico.</li>
+                        <li>Aulas em grupo (até 4 por semana).</li>
+                        <li>Acompanhamento nutricional básico (e-book ou guia).</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Plano intermediário')">Adquirir</button>
+                </section>
+            </section>
+
+            
+            <section class="cards">
+                <section class="txt-carda">
+                    <section class="tt">
+                        <h2 class="title-card">Plano avançado</h2>
+                        <p>R$ 149,90</p>
+                    </section>
+                    <ul class="describe">
+                        <li>Acesso ilimitado à academia, incluindo horários exclusivos.</li>
+                        <li>Aulas em grupo ilimitadas.</li>
+                        <li>Personal trainer (até 8 sessões por mês).</li>
+                        <li>Avaliações físicas mensais e acompanhamento nutricional personalizado.</li>
+                        
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Plano avançado')">Adquirir</button>
+                </section>
+            </section >
+            
+                <a href="carrinho.html" id="carrinho" class="carrinho-link" >Carrinho</a>
+            
+        </section>
+
+    </main>
+    <footer>
+        <article class="contacts-footer">
+            <aside class="phone">
+                <a href="tel:71-0000-0000">
+                    <h3>71 0000-0000</h3>
+                </a>
+            </aside>
+            <aside class="email">
+                <a href="mailto:academia@gymrats.com" class="contact-ancora">
+                    <u>academia@gymrats.com</u>
+                </a>
+            </aside>
+        </article>
+        <nav class="nav-footer">
+            <ul class="nav-ul">
+                <li><a class="a-footer" href="index.html">Home</a></li>
+                <li><a class="a-footer" href="planos.html">Planos</a></li>
+                <li><a class="a-footer" href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        function adicionarAoCarrinho(produtoId) {
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push(produtoId);
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert('Produto adicionado ao carrinho!');
+        }
+    </script>
+
+</body>
+
+</html>
