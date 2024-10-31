@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+.header-com-imagem{
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.logo {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+#main-home {
+    background-image: url(fundoliso.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#nav {
+    margin-top: 10px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+.carrinho-link {
+    position: absolute; /* Ou fixed para ficar fixo ao rolar a página */
+    top: 10px;
+    right: 20px;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.carrinho-link:hover {
+    background-color: #ff4500;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#format {
+    padding: 20px;
+    text-align: center;
+}
+
+#section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+.cards {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+}
+
+.title-card {
+    
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.describe {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.describe li {
+
+    margin-bottom: 8px;
+
+}
+
+button {   
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+    
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacts-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.phone, .email {
+    text-align: center;
+}
+
+.nav-footer {
+    margin-top: 10px;
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-ul li {
+    margin: 0 10px;
+}
+
+.a-footer {
+    color: #fff;
+    text-decoration: none;
+}
+
