@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-com-imagem{
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.logo {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav {
+    margin-top: 10px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-home {
+    background-image: url(fundoliso.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-content img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.texto-home {
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacts-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.phone, .email {
+    text-align: center;
+}
+
+.nav-footer {
+    margin-top: 10px;
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-ul li {
+    margin: 0 10px;
+}
+
+.a-footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.contacts-footer {
+    gap: 20px;
+}
