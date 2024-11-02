@@ -108,14 +108,7 @@
             </ul>
         </nav>
     </footer>
-    <script>
-        function adicionarAoCarrinho(produtoId) {
-            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-            carrinho.push(produtoId);
-            localStorage.setItem('carrinho', JSON.stringify(carrinho));
-            alert('Produto adicionado ao carrinho!');
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
