@@ -6,10 +6,15 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+
 }
 
 .header-com-imagem{
@@ -22,6 +27,9 @@ body {
     text-align: center;
     text-decoration: none;
     color: #fff;
+}
+main{
+    flex: 1;
 }
 #main-home {
     background-image: url(fundoliso.avif);
@@ -45,7 +53,7 @@ body {
 }
 
 .carrinho-link {
-    position: absolute; /* Ou fixed para ficar fixo ao rolar a página */
+    position: absolute; 
     top: 10px;
     right: 20px;
     background-color: #ff6600;
@@ -54,7 +62,6 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9em;
     transition: background-color 0.3s;
 }
 
@@ -82,13 +89,18 @@ body {
 
 
 .cards {
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
     margin: 15px;
     padding: 20px;
-    width: 250px;
+    width: 300px;
+    transition: transform 0.2s;
+    
 }
+.txt-carda{
+    
+    text-align: center;
+}
+
 
 .title-card {
     
@@ -97,9 +109,10 @@ body {
 }
 
 .describe {
+    
     list-style-type: disc;
     padding-left: 20px;
-    margin: 10px 0;
+    margin: 15px;
 }
 .describe li {
 
@@ -108,6 +121,7 @@ body {
 }
 
 button {   
+    
     background-color: #333;
     border: none;
     color: #fff;
@@ -122,19 +136,24 @@ button:hover {
 
 
 
-    
 
 footer {
     background: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .contacts-footer {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
+}
+.contacts-footer a{
+    text-decoration: none;
+    color: #ff6600;
 }
 
 .phone, .email {
@@ -159,5 +178,4 @@ footer {
     color: #fff;
     text-decoration: none;
 }
-
 
