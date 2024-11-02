@@ -26,7 +26,7 @@
     <main id="main-home">
         <section id="format">
             <h1>Produtos</h1>
-            <p>Na GymRat, oferecemos tambem uma variedade de produtos para ajuda-lo a chegar em seu objetivo</p>
+            <p>Na GymRats, oferecemos tambem uma variedade de produtos para ajuda-lo a chegar em seu objetivo.</p>
         </section>
 
         <section id="section-cards">
@@ -39,7 +39,7 @@
                     </section>
                     <ul class="describe">
                         <li>600ml.</li>
-                        <li>Cores:Vermelha e Preta</li>
+                        <li>Cores:Vermelha e Preta.</li>
                     </ul>
                     <button onclick="adicionarAoCarrinho('Coqueteleira')">Adquirir</button>
                 </section>
@@ -49,11 +49,11 @@
                     <img src="imgs/marmiteira.png" alt="" width="150">
                     <section class="tt">
                         <h2 class="title-card">Marmiteira compacta</h2>
-                        <p>79,90</p>
+                        <p>R$ 79,90</p>
                     </section>
                     <ul class="describe">
-                        <li>Confortavel e estiloso</li>
-                        <li>Duravel e resistente</li>
+                        <li>Confortavel e estiloso.</li>
+                        <li>Duravel e resistente.</li>
                     </ul>
                     <button onclick="adicionarAoCarrinho('Marmiteira compacta')">Adquirir</button>
                 </section>
@@ -63,12 +63,12 @@
                     <img src="imgs/corda_de_pular_profissional_mbfit_15330385_1_60741d60a86f088d004b26c01215e9dc.webp" alt="" width="150">
                     <section class="tt">
                         <h2 class="title-card">Corda de pular</h2>
-                        <p>29,90</p>
+                        <p>R$ 29,90</p>
                     </section>
                     <ul class="describe">
-                        <li>Leve e portatil</li>
-                        <li>Otimo para aquecimento</li>
-                        <li>Ajustaval a altura</li>
+                        <li>Leve e portatil.</li>
+                        <li>Otimo para aquecimento.</li>
+                        <li>Ajustaval a altura.</li>
                     </ul>    
                     <button onclick="adicionarAoCarrinho('Corda de pular')">Adquirir</button>
                 </section>
@@ -78,12 +78,12 @@
                     <img src="imgs/whey.jpg" alt="" width="140">
                     <section class="tt">
                         <h2>Whey Protein</h2>
-                        <p>119,90</p>
+                        <p>R$ 119,90</p>
                     </section>
                     <ul class="describe">
-                        <li>Sabor:Chocolate e Morango</li>
-                        <li>1 kilo</li>
-                        <li>Ajuda na hipertrofia</li>
+                        <li>Sabor:Chocolate e Morango.</li>
+                        <li>1 kilo.</li>
+                        <li>Ajuda na hipertrofia.</li>
                     </ul>
                     <button onclick="adicionarAoCarrinho('Whey Protein')">Adquirir</button>
                 </section>
@@ -114,16 +114,7 @@
             </ul>
         </nav>
     </footer>
-    <script>
-        function adicionarAoCarrinho(produtoId) {
-            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-            carrinho.push(produtoId);
-            localStorage.setItem('carrinho', JSON.stringify(carrinho));
-            alert('Produto adicionado ao carrinho!');
-        }
-    </script>
-
-
-    
+    <script src="script.js"></script>
+   
 </body>
 </html>
