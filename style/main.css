@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +51,8 @@ main{
 }
 
 #main-home {
-    background-image: url(fundoliso.avif);
+    
+    background-image: url(fundobrancowal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
@@ -151,3 +153,5 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+
+
