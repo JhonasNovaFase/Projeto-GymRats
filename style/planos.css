@@ -32,10 +32,8 @@ main{
     flex: 1;
 }
 #main-home {
-    background-image: url(fundoliso.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px;
+    background-image: url(fundobrancowal.jpg);
+  
 }
 
 #nav {
